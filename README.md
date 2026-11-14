@@ -122,7 +122,7 @@ For invariants, data flow, and release engineering, see [DEVELOPER.md](DEVELOPER
 
 Choose the path that best fits what you need:
 
-- **Need help using the app?** Start with [Support](SUPPORT.md), then ask in [GitHub Discussions](https://github.com/sudosudoku/sudo-sudoku/discussions/categories/q-a).
+- **Need help using the app?** Start with [Support](https://sudosudoku.kaichen.dev/support), then ask in [GitHub Discussions](https://github.com/sudosudoku/sudo-sudoku/discussions/categories/q-a).
 - **Found a reproducible bug?** Open a [bug report](https://github.com/sudosudoku/sudo-sudoku/issues/new/choose).
 - **Have an idea?** Share it in [Ideas](https://github.com/sudosudoku/sudo-sudoku/discussions/categories/ideas) before opening an implementation issue.
 - **Want to contribute?** Read [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md).
@@ -143,4 +143,4 @@ Choose the path that best fits what you need:
 
 sudo sudoku is available under the [MIT License](LICENSE).
 
-Created by [Kai T. Chen](https://kaichen.dev).
+Created by [Kai Chen](https://kaichen.dev).

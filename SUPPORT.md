@@ -2,6 +2,8 @@
 
 sudo sudoku 2.0.1 is available free on the [App Store](https://apps.apple.com/us/app/sudo-sudoku/id6779813086) for iPhone running iOS 17 or later.
 
+This page is also published at [sudosudoku.kaichen.dev/support](https://sudosudoku.kaichen.dev/support), which lists the developer's contact email.
+
 ## Quick help
 
 ### My puzzle or timer disappeared
@@ -59,6 +61,7 @@ Security vulnerabilities must not be posted publicly. Follow the private reporti
 
 - [App Store](https://apps.apple.com/us/app/sudo-sudoku/id6779813086)
 - [Official website](https://sudosudoku.kaichen.dev)
+- [Support page](https://sudosudoku.kaichen.dev/support)
 - [GitHub Discussions](https://github.com/sudosudoku/sudo-sudoku/discussions)
 - [Known issues](https://github.com/sudosudoku/sudo-sudoku/issues)
 - [Privacy Policy](https://sudosudoku.kaichen.dev/privacy)

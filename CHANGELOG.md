@@ -35,6 +35,8 @@ v2.0.1 is a maintenance release. "Sodoku" was a misspelling, so the app is now *
 - The Xcode project, target, scheme, module, source folders and test target are now `SudoSudoku` / `SudoSudokuTests`; the repository moved to [`sudosudoku/sudo-sudoku`](https://github.com/sudosudoku/sudo-sudoku) and all docs and templates link there (#105)
 - Version is 2.0.1: 2.0.0 is already on the App Store, so App Store Connect rejected new builds under it (Xcode Cloud archives failed at "Preparing build for App Store Connect") (#113)
 - Adopted Xcode 27's recommended project settings (upgrade check 2700, project-level development team, string catalog symbols); the deployment target stays iOS 17.0 (#115)
+- Author attribution now reads Kai Chen (LICENSE, README, privacy policy, security policy, code of conduct, source header)
+- Support links in README and SUPPORT point at the product site's support page, `https://sudosudoku.kaichen.dev/support`
 - README opens with the app icon and a launch-focused product hierarchy, matching the product site
 - Reorganized the post-launch repository around clear product, support, contribution, discussion, privacy, security, and release paths
 - Replaced legacy issue and pull request templates with focused forms that route questions and ideas to Discussions and keep bug reports actionable
