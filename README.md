@@ -142,4 +142,4 @@ Choose the path that best fits what you need:
 
 sudo sudoku is available under the [MIT License](LICENSE).
 
-Created by [Kai T. Chen](https://kaichen.dev).
+Created by [Kai Chen](https://kaichen.dev).

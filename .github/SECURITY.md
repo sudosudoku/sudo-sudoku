@@ -13,7 +13,7 @@ Security fixes are provided for the current App Store release.
 
 Do not open a public issue or discussion for a suspected vulnerability.
 
-Use the repository’s [private vulnerability reporting form](https://github.com/sudosudoku/sudo-sudoku/security/advisories/new). If that form is unavailable, contact Kai T. Chen using the contact details at [kaichen.dev](https://kaichen.dev).
+Use the repository’s [private vulnerability reporting form](https://github.com/sudosudoku/sudo-sudoku/security/advisories/new). If that form is unavailable, contact Kai Chen using the contact details at [kaichen.dev](https://kaichen.dev).
 
 Include, when possible:
 
