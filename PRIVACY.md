@@ -108,4 +108,4 @@ that version ships, with the effective date above revised.
 
 For general privacy questions, see [sudo sudoku support](SUPPORT.md). Do not put
 personal information in a public issue. For a private request, reach the
-developer, Kai T. Chen, using the contact details at <https://kaichen.dev>.
+developer, Kai Chen, using the contact details at <https://kaichen.dev>.

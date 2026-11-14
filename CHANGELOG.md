@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Author attribution now reads Kai Chen (LICENSE, README, privacy policy, security policy, code of conduct, source header).
 - Adopted Xcode 27's recommended project settings (upgrade check 2700, project-level development team, string catalog symbols); the deployment target stays iOS 17.0.
 - Version is now 2.0.1: 2.0.0 is already on the App Store, so App Store Connect rejects new builds under it (Xcode Cloud archives failed at "Preparing build for App Store Connect").
 - The in-app privacy link (`cat /privacy`) and the README/SUPPORT links point at the new product site, `https://sudosudoku.kaichen.dev`. The old domain keeps redirecting, so v2.0.0 links still work.
