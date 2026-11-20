@@ -69,7 +69,7 @@ Before opening a pull request:
 xcodebuild test \
   -project SudoSudoku.xcodeproj \
   -scheme SudoSudoku \
-  -destination 'platform=iOS Simulator,name=iPhone 17 Pro'
+  -destination 'platform=iOS Simulator,name=iPhone 18 Pro,OS=latest'
 ```
 
 In the pull request, explain the user-visible outcome, link the issue with `Closes #N` when appropriate, describe validation, and include before/after media for interface changes.
