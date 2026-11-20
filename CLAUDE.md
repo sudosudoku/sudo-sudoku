@@ -46,10 +46,13 @@
 
 ## Build & Test
 
-- CLI builds need the full Xcode: `export DEVELOPER_DIR=/Applications/Xcode-beta.app/Contents/Developer`
-  (the local `xcode-select` points at Command Line Tools).
+- CLI builds use the full Xcode at `/Applications/Xcode.app` (Xcode 27.2), which
+  `xcode-select` points at. If `xcodebuild` ever reports Command Line Tools,
+  prefix commands with `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer`.
 - Run tests before every PR:
-  `xcodebuild test -project SudoSudoku.xcodeproj -scheme SudoSudoku -destination 'platform=iOS Simulator,name=iPhone 17 Pro'`
+  `xcodebuild test -project SudoSudoku.xcodeproj -scheme SudoSudoku -destination 'platform=iOS Simulator,name=iPhone 18 Pro,OS=latest'`
+  (the iPhone 17 Pro simulator only exists on the older iOS 27.0 runtime and
+  no longer resolves with Xcode 27.2).
 - The `SudoSudoku` scheme is shared and runs `SudoSudokuTests` in its Test action
   (Xcode Cloud runs it too). Keep new logic covered: generator/rating/storage
   changes need matching unit tests.

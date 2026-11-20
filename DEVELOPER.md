@@ -88,7 +88,7 @@ The shared `SudoSudoku` scheme includes `SudoSudokuTests`. Run the full suite be
 xcodebuild test \
   -project SudoSudoku.xcodeproj \
   -scheme SudoSudoku \
-  -destination 'platform=iOS Simulator,name=iPhone 17 Pro'
+  -destination 'platform=iOS Simulator,name=iPhone 18 Pro,OS=latest'
 ```
 
 Generator, rating, persistence, Game Center mapping, and regression changes require targeted tests. Generator quality assertions should verify solvability, uniqueness, technique gates, score bands, clue distribution, and performance.

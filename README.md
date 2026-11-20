@@ -94,7 +94,7 @@ Command-line helpers are also available:
 xcodebuild test \
   -project SudoSudoku.xcodeproj \
   -scheme SudoSudoku \
-  -destination 'platform=iOS Simulator,name=iPhone 17 Pro'
+  -destination 'platform=iOS Simulator,name=iPhone 18 Pro,OS=latest'
 ```
 
 Do not accept an Xcode recommendation that replaces the literal `IPHONEOS_DEPLOYMENT_TARGET = 17.0`; see [CONTRIBUTING.md](CONTRIBUTING.md) for the project-specific reason.
