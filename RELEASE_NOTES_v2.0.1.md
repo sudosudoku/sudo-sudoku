@@ -1,6 +1,6 @@
 # sudo sudoku v2.0.1
 
-**Released TBD · [Download on the App Store](https://apps.apple.com/us/app/sudo-sudoku/id6779813086) · [Official website](https://sudosudoku.kaichen.dev)**
+**Released November 21, 2026 · [Download on the App Store](https://apps.apple.com/us/app/sudo-sudoku/id6779813086) · [Official website](https://sudosudoku.kaichen.dev)**
 
 ```
 $ alias sudosodoku='sudo sudoku'
