@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://apps.apple.com/us/app/sudo-sudoku/id6779813086">Download on the App Store</a>
   · <a href="https://sudosudoku.kaichen.dev">Website</a>
-  · <a href="https://github.com/sudosudoku/sudo-sudoku/releases/tag/v2.0.0">v2.0.0</a>
+  · <a href="https://github.com/sudosudoku/sudo-sudoku/releases/latest">Latest release</a>
 </p>
 
 ```text
@@ -122,7 +122,7 @@ For invariants, data flow, and release engineering, see [DEVELOPER.md](DEVELOPER
 
 Choose the path that best fits what you need:
 
-- **Need help using the app?** Start with [Support](SUPPORT.md), then ask in [GitHub Discussions](https://github.com/sudosudoku/sudo-sudoku/discussions/categories/q-a).
+- **Need help using the app?** Start with [Support](https://sudosudoku.kaichen.dev/support), then ask in [GitHub Discussions](https://github.com/sudosudoku/sudo-sudoku/discussions/categories/q-a).
 - **Found a reproducible bug?** Open a [bug report](https://github.com/sudosudoku/sudo-sudoku/issues/new/choose).
 - **Have an idea?** Share it in [Ideas](https://github.com/sudosudoku/sudo-sudoku/discussions/categories/ideas) before opening an implementation issue.
 - **Want to contribute?** Read [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md).
@@ -134,6 +134,7 @@ Choose the path that best fits what you need:
 - [Development and roadmap](DEVELOPER.md)
 - [Contributing](CONTRIBUTING.md)
 - [Changelog](CHANGELOG.md)
+- [v2.0.1 release notes](RELEASE_NOTES_v2.0.1.md)
 - [v2.0.0 release notes](RELEASE_NOTES_v2.0.0.md)
 - [Privacy Policy](PRIVACY.md)
 - [Security Policy](.github/SECURITY.md)
