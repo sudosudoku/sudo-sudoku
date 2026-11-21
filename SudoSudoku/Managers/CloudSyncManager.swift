@@ -88,10 +88,10 @@ final class CloudSyncManager: CKSyncEngineDelegate, SaveDataSyncDelegate {
 
     func storageDidChange(_ change: SaveDataChange) {
         enqueue(
-            saves: change.savedRecordIDs.map(Self.gameRecordID)
-                + change.savedRatingKeys.map(Self.ratingRecordID),
-            deletes: change.deletedRecordIDs.map(Self.gameRecordID)
-                + change.deletedRatingKeys.map(Self.ratingRecordID)
+            saves: change.savedRecordIDs.map { Self.gameRecordID($0) }
+                + change.savedRatingKeys.map { Self.ratingRecordID($0) },
+            deletes: change.deletedRecordIDs.map { Self.gameRecordID($0) }
+                + change.deletedRatingKeys.map { Self.ratingRecordID($0) }
         )
     }
 
@@ -106,8 +106,8 @@ final class CloudSyncManager: CKSyncEngineDelegate, SaveDataSyncDelegate {
         engine.state.add(pendingDatabaseChanges: [.saveZone(CKRecordZone(zoneID: Self.zoneID))])
         enqueue(
             saves: storage.records.map { Self.gameRecordID($0.id) }
-                + storage.ratingLedger.keys.map(Self.ratingRecordID)
-                + achievements.unlockedIDs.map(Self.achievementRecordID),
+                + storage.ratingLedger.keys.map { Self.ratingRecordID($0) }
+                + achievements.unlockedIDs.map { Self.achievementRecordID($0) },
             deletes: []
         )
     }
