@@ -20,7 +20,8 @@
 - Public App Store release: 2.0, launched 2026-07-16 (as SudoSodoku; renamed
   to sudo sudoku afterwards).
   App Store: `https://apps.apple.com/us/app/sudo-sudoku/id6779813086`.
-  Website: `https://sudosodoku.kaichen.dev` (moving to a new domain).
+  Website: `https://sudosudoku.kaichen.dev` (the old
+  `sudosodoku.kaichen.dev` 308-redirects every path to it).
 - Canonical repository: `https://github.com/sudosudoku/sudo-sudoku`.
 - iPhone-only iOS app (`TARGETED_DEVICE_FAMILY = 1`), iOS 17.0+, SwiftUI + MVVM,
   Swift 5.9. **No iPadOS or macOS work** — deferred indefinitely.
@@ -31,7 +32,7 @@
 - The product name is **sudo sudoku** (lowercase, with a space) in user-facing
   copy, docs and the home-screen name; code identifiers, the Xcode project,
   target and scheme use `SudoSudoku`. The repo is `sudosudoku/sudo-sudoku`.
-  The old `sudosodoku.kaichen.dev` domain must stay reachable forever
+  The old `sudosodoku.kaichen.dev` domain must keep redirecting forever
   (v2.0.0 hardcodes its privacy URL).
 - Bundle ID `dev.kaichen.sudoku.app`; Game Center leaderboard IDs live in
   `SudoSudoku/Utils/AppConstants.swift`.
@@ -52,10 +53,13 @@
 
 ## Build & Test
 
-- CLI builds need the full Xcode: `export DEVELOPER_DIR=/Applications/Xcode-beta.app/Contents/Developer`
-  (the local `xcode-select` points at Command Line Tools).
+- CLI builds use the full Xcode at `/Applications/Xcode.app` (Xcode 27.2), which
+  `xcode-select` points at. If `xcodebuild` ever reports Command Line Tools,
+  prefix commands with `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer`.
 - Run tests before every PR:
-  `xcodebuild test -project SudoSudoku.xcodeproj -scheme SudoSudoku -destination 'platform=iOS Simulator,name=iPhone 17 Pro'`
+  `xcodebuild test -project SudoSudoku.xcodeproj -scheme SudoSudoku -destination 'platform=iOS Simulator,name=iPhone 18 Pro,OS=latest'`
+  (the iPhone 17 Pro simulator only exists on the older iOS 27.0 runtime and
+  no longer resolves with Xcode 27.2).
 - The `SudoSudoku` scheme is shared and runs `SudoSudokuTests` in its Test action
   (Xcode Cloud runs it too). Keep new logic covered: generator/rating/storage
   changes need matching unit tests.

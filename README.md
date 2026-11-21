@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://apps.apple.com/us/app/sudo-sudoku/id6779813086">Download on the App Store</a>
-  · <a href="https://sudosodoku.kaichen.dev">Website</a>
+  · <a href="https://sudosudoku.kaichen.dev">Website</a>
   · <a href="https://github.com/sudosudoku/sudo-sudoku/releases/tag/v2.0.0">v2.0.0</a>
 </p>
 
@@ -64,7 +64,7 @@ That approach follows the same fundamentals Apple recommends in its [Human Inter
 
 Game history, rating, statistics, and achievements live in one save file on your device and sync through your private iCloud database, so a new iPhone picks up where the old one left off. The developer can't see that data. sudo sudoku has no developer account system, analytics, advertising, tracking, or third-party SDKs. iCloud and Game Center are optional and operated by Apple.
 
-Read the full [Privacy Policy](PRIVACY.md) or visit [sudosodoku.kaichen.dev/privacy](https://sudosodoku.kaichen.dev/privacy).
+Read the full [Privacy Policy](PRIVACY.md) or visit [sudosudoku.kaichen.dev/privacy](https://sudosudoku.kaichen.dev/privacy).
 
 ## Build from source
 
@@ -94,7 +94,7 @@ Command-line helpers are also available:
 xcodebuild test \
   -project SudoSudoku.xcodeproj \
   -scheme SudoSudoku \
-  -destination 'platform=iOS Simulator,name=iPhone 17 Pro'
+  -destination 'platform=iOS Simulator,name=iPhone 18 Pro,OS=latest'
 ```
 
 Do not accept an Xcode recommendation that replaces the literal `IPHONEOS_DEPLOYMENT_TARGET = 17.0`; see [CONTRIBUTING.md](CONTRIBUTING.md) for the project-specific reason.
@@ -142,4 +142,4 @@ Choose the path that best fits what you need:
 
 sudo sudoku is available under the [MIT License](LICENSE).
 
-Created by [Kai T. Chen](https://kaichen.dev).
+Created by [Kai Chen](https://kaichen.dev).
