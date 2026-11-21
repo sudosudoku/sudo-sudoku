@@ -1,6 +1,6 @@
 # Privacy Policy — sudo sudoku
 
-**Effective date:** 2026-10-29
+**Effective date:** 2026-11-20
 **Applies to:** sudo sudoku for iOS (bundle `dev.kaichen.sudoku.app`), version 2.0.0 and later.
 
 sudo sudoku is a single-player sudoku game that works fully offline. This
@@ -43,7 +43,7 @@ App Store privacy label is therefore **Data Not Collected**.
 
 ## 2. iCloud sync (optional, operated by Apple)
 
-If you are signed in to iCloud, the app copies the save data above — game
+Starting with version 2.0.2, if you are signed in to iCloud, the app copies the save data above — game
 history, rating, and achievement progress — into **your private iCloud
 database** using Apple's CloudKit, so a new or second iPhone signed in to the
 same Apple Account gets it back.
@@ -114,7 +114,9 @@ third-party data for advertising or share data with data brokers.
 - To stop iCloud sync: turn iCloud off for this app in Settings → [your name]
   → iCloud. Data already on the device stays there.
 - To remove all local data: delete the app. To remove the iCloud copy too,
-  delete it from your iCloud storage as described in section 5.
+  first delete the app from every iPhone that has it, then delete the copy
+  from your iCloud storage as described in section 5. An iPhone that still
+  has the app uploads its local data again.
 
 ## 7. Children
 

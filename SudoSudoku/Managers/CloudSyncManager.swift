@@ -157,7 +157,14 @@ final class CloudSyncManager: CKSyncEngineDelegate, SaveDataSyncDelegate {
     ) async -> CKSyncEngine.RecordZoneChangeBatch? {
         let changes = syncEngine.state.pendingRecordZoneChanges.filter { context.options.scope.contains($0) }
         return await CKSyncEngine.RecordZoneChangeBatch(pendingChanges: changes) { recordID in
-            await self.makeRecord(for: recordID)
+            guard let record = await self.makeRecord(for: recordID) else {
+                // Gone locally since it was queued (a later delete is queued
+                // on its own). The engine only skips a nil record, so drop
+                // the save here or it would be offered again every send.
+                syncEngine.state.remove(pendingRecordZoneChanges: [.saveRecord(recordID)])
+                return nil
+            }
+            return record
         }
     }
 
@@ -286,7 +293,7 @@ final class CloudSyncManager: CKSyncEngineDelegate, SaveDataSyncDelegate {
     // MARK: - Records
 
     /// The CKRecord for a pending save, or nil when the item no longer
-    /// exists locally (the engine then drops the pending save).
+    /// exists locally.
     private func makeRecord(for recordID: CKRecord.ID) -> CKRecord? {
         let name = recordID.recordName
 
