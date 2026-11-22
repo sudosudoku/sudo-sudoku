@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Project
+
+- Version is 2.0.2: 2.0.1 is approved, so App Store Connect closed its train and rejected the next upload (build 50: ITMS-90186 Invalid Pre-Release Train, ITMS-90062 version must be higher than 2.0.1) (#124)
+
 ---
 
 ## [2.0.1] - 2026-11-21
